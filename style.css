@@ -13,13 +13,11 @@ body{
 }
 /* NAVBAR  */
 .navbar{
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid gray;
 }
 .navb-link{
     text-decoration: none;
 
-}
-.navbar-toggler-icon{
 }
 /* HEADER  */
 .header{
@@ -29,14 +27,25 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
 }
-
 .arrow{
     transform: translateY(400%);
 }
-
 h1{
  font-size: 52px;
 }
+
+/* SEZIONE CARD DATI  */
+.card-dati-container{
+    margin-top: 100px;
+}
+.div-card{
+    margin-right: 50px;
+    border-bottom: 1px solid var(--color);
+}
+.lorem-card{
+    font-size: 10px;
+}
+
 /* MEDIA QUERY  */
 /* PC  */
 @media screen and (min-width: 1023px) {
