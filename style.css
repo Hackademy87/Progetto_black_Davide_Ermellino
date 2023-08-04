@@ -51,6 +51,16 @@ h1{
 .container-testo-luna{
     margin-top: 200px;
 }
+/* SEZIONE MINI CARD  */
+.mini-card-container{
+    margin-top: 150px;
+}
+.titolo-icona{
+    border-bottom: 1px solid var(--color) ;
+}
+.testo-mini-card{
+    font-size: 12px;
+}
 
 /* MEDIA QUERY  */
 /* PC  */
