@@ -1,0 +1,67 @@
+:root {
+    --color : #2B9DF4;
+    --font : Orbitron, Jura;
+}
+*{
+    font-family: var(--font);
+}
+body{
+    background-color: black;
+}
+.text-gray{
+    color: gray;
+}
+/* NAVBAR  */
+.navbar{
+    border-bottom: 3px solid white;
+}
+.navb-link{
+    text-decoration: none;
+
+}
+.navbar-toggler-icon{
+}
+/* HEADER  */
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,1)), url(media/moon.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.arrow{
+    transform: translateY(400%);
+}
+
+h1{
+ font-size: 52px;
+}
+/* MEDIA QUERY  */
+/* PC  */
+@media screen and (min-width: 1023px) {
+    .title-subtitle{
+        width: 100%;
+    }
+}
+
+/* TABLET  */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header{
+        justify-content: center;
+    }
+}
+
+/* CELLULARI  */
+@media screen and (max-width: 767px) {
+    h1{
+        font-size: 30px;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+    .header > p{
+        text-align: center;
+    }
+
+
+}
