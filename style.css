@@ -65,26 +65,111 @@ h1{
 .container-rocket{
     margin-top: 150px;
 }
+/* SEZIONE CARD CON BOTTONE  */
+.container-card-bottone{
+    margin-top: 150px;
+}
+.bottone-card{
+    display: block;
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    border: 2px solid var(--color);
+    position: relative;
+}
 
-
+.bottone-card > div::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 6px;
+    background-color: black;
+    top: -3px;
+    left: 5%;
+}
+.bottone-card::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 6px;
+    background-color: black;
+    bottom: -2px;
+    left: 5%;
+}
+.bottone-card::after{
+    content: "";
+    position: absolute;
+    height: 60%;
+    width: 6px;
+    background-color: black;
+    top : 25%;
+    left: -3px;
+    transform: translate(5%,-2px);
+}
+.bottone-card > div::after{
+    content: "";
+    position: absolute;
+    height: 60%;
+    width: 6px;
+    background-color: black;
+    top : 25%;
+    right: -2px;
+    transform: translate(5%,-2px);
+}
+/* FOOTER  */
+.footer{
+    height: 75vh;
+    margin-top: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(media/sunrise-1765027_1920.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.social{
+    list-style-type: none;
+}
+.fa-brands{
+    font-size: 20px;
+}
+.linea{
+        background:linear-gradient(to right, transparent 20%, var(--color), transparent 80%);
+        width: 100%;
+        height: 7px;
+        margin-bottom: 100px;
+    }
+}
 
 /* MEDIA QUERY  */
 /* PC  */
 @media screen and (min-width: 1023px) {
+    /* HEADER  */
     .title-subtitle{
         width: 100%;
+    }
+    /* SEZIONE CARD BOTTONE  */
+    .paragrafo-bottone{
+        text-align: left !important;
     }
 }
 
 /* TABLET  */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* HEADER  */
     .header{
         justify-content: center;
+    }
+    /* SEZIONE CARD BOTTONE  */
+    .bottone-card{
+        margin-right: auto;
+        margin-left: 0;
+    }
+    .paragrafo-bottone{
+        text-align: left !important;
     }
 }
 
 /* CELLULARI  */
 @media screen and (max-width: 767px) {
+    /* HEADER  */
     h1{
         font-size: 30px;
         text-align: center;
@@ -93,6 +178,9 @@ h1{
     .header > p{
         text-align: center;
     }
-
+    /* SEZIONE CARD BOTTONE  */
+    .bottone-card{
+        margin-right: auto;
+    }
 
 }
